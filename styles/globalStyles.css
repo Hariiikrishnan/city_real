@@ -1,0 +1,26 @@
+
+
+.center-row{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.center-col{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.noOpacity{
+    opacity:0;
+}
+
+.fullOpacity{
+    opacity:1!important;
+}
+
+.poppins-font{
+    font-family: 'Poppins', Arial, sans-serif;
+   
+}

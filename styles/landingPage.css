@@ -1,0 +1,262 @@
+
+
+*{
+    margin:0px;
+    
+}
+
+/* Navbar Styles */
+a{
+    text-decoration: none;
+   
+}
+.nav-links li a:link{
+    animation:slideDown 0.3s ease-in;
+}
+ li {
+    list-style: none;
+}
+
+.nav-links .menu button {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color:white;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    margin: 0 30px;
+    padding:20px 0;
+}
+
+.nav-links a {
+    color: #000;
+    font-family: 'Poppins', Arial, sans-serif;
+   
+}
+
+.nav-links a:hover {
+    color: #888686;
+}
+
+.logo img{
+   height:40px;
+    animation:slideDown 0.3s ease-in;
+}
+
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 15px;
+    align-items: center;
+    background-color:white;
+    
+    animation:slideDown 0.3s ease-in;
+}
+
+.menu a {
+    font-weight: 500;
+    margin-left: 30px;
+}
+
+.menu button {
+    font-weight: 500;
+    border: 1px solid rgb(106, 177, 224);
+    padding: 10px 13px;
+    border-radius: 60px;
+    margin-left: 30px;
+    font-family: 'Poppins', Arial, sans-serif;
+   
+}
+
+.menu button:hover {
+    color: rgb(106, 177, 224);
+    border: 1px solid #000;
+    transition: 1s ace;
+}
+
+/* Hamburger menu */
+input[type=checkbox] {
+    display: none;
+
+}
+
+.hamburger-menu {
+    display: none;
+    font-size: 20px;
+    user-select: none;
+}
+
+
+
+
+#header{
+    width:100%;
+     /* background-image:url("../images/headerBg1.svg"); */
+     background-size:cover ;
+     height:90vh;
+     animation:changingBG 9s ease-in-out infinite ;
+     display: flex;
+     align-items: center;
+     background-position: center;
+}
+#header #bgImg{
+    width: 80%;
+    height: 300px;
+    justify-content: space-evenly
+}
+#header #bgImg .top h1,#header #bgImg .top h3{
+    color:white;
+    font-weight: 700;
+    font-size: 40px;
+    font-family: 'Poppins', Arial, sans-serif;
+   
+    /* font-family: */
+}
+#header #bgImg .top h1{
+    text-align: center;
+    /* opacity: 0; */
+    animation : slideRightIn 0.5s ease-in;
+    animation-delay: 1.1s;
+}
+#header #bgImg .top h3{
+    animation : slideLeftIn 0.5s ease-in;
+    animation-delay: 1.1s;
+
+}
+#header #bgImg .bottom h6{
+    color:white;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center; 
+    font-family: 'Poppins', Arial, sans-serif;
+   animation :changeOpacity 0.8s ease-in;
+   animation-delay:1.1s;
+}
+
+
+
+
+
+
+/* CSS Animations */
+
+@keyframes changingBG {
+    0%{
+        /* opacity:0.8; */
+        background-image: url("../images/headerBg1.svg");
+    }
+    50%{
+        /* opacity:0.8; */
+        background-image: url("../images/headerBg2.svg");
+    }
+    100%{
+        background-image: url("../images/headerBg1.svg");
+
+    }
+
+}
+
+@keyframes slideRightIn{
+    0%{
+        transform: translateX(15%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes slideLeftIn{
+    0%{
+        transform: translateX(-15%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes slideDown{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes slideLightDown{
+    0%{
+        transform: translateY(-50%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes heightChange{
+    0%{
+        height:0;
+    }
+    100%{
+        height:auto;
+    }
+}
+
+@keyframes changeOpacity{
+    0%{
+        opacity:0;
+    }
+    100%{
+    opacity:1;
+}
+
+}
+
+/* Mobile Size Media Queries */
+
+@media only screen and (max-width:768px){
+
+    /* Navbar */
+    .menu {
+        display: none;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        padding: 10px 0;
+        left: 0;
+    }
+
+    .menu li, 
+    .menu button{
+        margin-top: 10px;
+    }
+
+    input[type=checkbox]:checked ~ .menu {
+        display: block;
+    }
+    input[type=checkbox]:checked ~ .hamburger-menu{
+        border:solid black 2px;
+        border-radius:4px;
+        background-color:white;
+        transition:padding 0.1s linear;
+    }
+
+     .menu{
+        /* animation:none; */
+        animation:slideLightDown 0.3s ease-in;
+    }
+    .hamburger-menu {
+        display: block;
+        margin-bottom: 3px;
+        padding:3px 8px;
+    animation:slideDown 0.3s ease-in;
+    }
+
+
+    /* Header text */
+    #header #bgImg .top h1,#header #bgImg .top h3{
+        font-size:30px;
+    }
+    #header #bgImg .bottom h6{
+        font-size:20px;
+    }
+}
