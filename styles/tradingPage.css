@@ -445,8 +445,12 @@ html{
 
 
     /* Features */
+    #features{
+        align-items: flex-start;
+    }
     #features .container {
         width: 80%;
+        margin:60px 0;
     }
     #features .top h2{
         font-size: 20px;
@@ -494,7 +498,7 @@ html{
         width: 80%;
     }
     .services{
-        padding:50px 0px;
+        padding:10px 0px;
     }
     .services .container{
         flex-wrap:wrap ;
