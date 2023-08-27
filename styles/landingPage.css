@@ -203,10 +203,10 @@ input[type=checkbox] {
     right: -7%;
 }
 
-#qatarAbout .top.container.addAnimation .img-container,#qatarAbout .bottom.container.addAnimation .text{
+#qatarAbout.addAnimation .top.container .img-container,#qatarAbout.addAnimation .bottom.container .text{
     animation:slideLeft 0.5s ease-in-out;
 }
-#qatarAbout .bottom.container.addAnimation .img-container,#qatarAbout .top.container.addAnimation .text{
+#qatarAbout.addAnimation .bottom.container .img-container,#qatarAbout.addAnimation .top.container .text{
     animation:slideRight 0.5s ease-in-out;
 }
 
@@ -376,6 +376,7 @@ input[type=checkbox] {
     width: 30%;
     display: flex;
     flex-direction:column;
+    justify-content: center;
     align-items: center;
     height: inherit;
     background-color: #004bad82;
@@ -656,7 +657,9 @@ input[type=checkbox] {
 #services .container .top .text,#services .container .bottom .text{
     width: 70%;
 }
-
+#services .container .top .text p,#services .container .bottom .text p{
+    margin: 20px;
+}
 
 /* Apartments */
 #apartments .container {
