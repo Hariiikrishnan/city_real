@@ -5,6 +5,11 @@
     font-family: 'Poppins', Arial, sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+
 /* Navbar Styles */
 a{
     text-decoration: none;

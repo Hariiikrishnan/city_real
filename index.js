@@ -48,10 +48,10 @@ let observer = new IntersectionObserver(updates => {
             update.target.classList.add('addAnimation');
             
         }
-        // else{
-        //     update.target.classList.remove('addAnimation');
+        else{
+            update.target.classList.remove('addAnimation');
 
-        // }
+        }
     });
 },{threshold:0});
 
