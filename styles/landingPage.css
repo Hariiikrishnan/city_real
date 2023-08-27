@@ -72,8 +72,8 @@ html{
 /* Qatar About Building Styles */
 
 #qatarAbout{
-    padding:30px;
-    /* width:100%; */
+    padding:30px 0;
+    width:100%;
 }
 #qatarAbout .container{
     width:70%;
@@ -504,10 +504,15 @@ html{
     #header #bgImg .bottom h6{
         font-size:20px;
     }
-
+    #header #bgImg{
+        width:90%;
+    }
 
 
     /* Qatar About */
+    #qatarAbout .container{
+        width:90%;
+    }
     #qatarAbout .container img{
         height:150px;
     }
@@ -578,5 +583,10 @@ html{
 /* Apartments */
 #apartments .container {
     flex-direction:column;
+}
+
+/* About */
+#about .container{
+    width:90%;
 }
 }

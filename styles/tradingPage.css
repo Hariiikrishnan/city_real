@@ -440,9 +440,14 @@ html{
 /* About */
 .about-container {
     flex-wrap:wrap;
+    width:90%;
 }
 
+
     /* Features */
+    #features .container {
+        width: 90%;
+    }
     #features .top h2{
         font-size: 20px;
     }
@@ -479,6 +484,11 @@ html{
         margin:10px 0;
     }
 
+    #quality .head h1 {
+     
+        width: 90%;
+    }
+
     /* Cards */
     .services .card-body{
         width: 80%;
@@ -489,6 +499,13 @@ html{
     .services .container{
         flex-wrap:wrap ;
     }
+    .services .container {
+        width: 90%;
+        justify-content: center;
+    }
+
+
+    
 }
 
 
