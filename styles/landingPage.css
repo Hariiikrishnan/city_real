@@ -208,10 +208,10 @@ input[type=checkbox] {
     right: -7%;
 }
 
-#qatarAbout.addAnimation .top.container .img-container,#qatarAbout.addAnimation .bottom.container .text{
+#qatarAbout .top.container.addAnimation .img-container,#qatarAbout .bottom.container.addAnimation .text{
     animation:slideLeft 0.5s ease-in-out;
 }
-#qatarAbout.addAnimation .bottom.container .img-container,#qatarAbout.addAnimation .top.container .text{
+#qatarAbout .bottom.container.addAnimation .img-container,#qatarAbout .top.container.addAnimation .text{
     animation:slideRight 0.5s ease-in-out;
 }
 
