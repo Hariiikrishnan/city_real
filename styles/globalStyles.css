@@ -299,7 +299,7 @@ input[type=checkbox] {
         width:80%;
     }
     #footer .about,#footer .contact{
-        padding:0 5px;
+        padding:0px;
         width:40%;
         /* align-items: start;     */
     }
