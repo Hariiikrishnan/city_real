@@ -2,7 +2,7 @@
 
 *{
     margin:0px;
-    
+    font-family: 'Poppins', Arial, sans-serif;
 }
 
 /* Navbar Styles */
@@ -94,7 +94,7 @@ input[type=checkbox] {
 
 #header{
     width:100%;
-     /* background-image:url("../images/headerBg1.svg"); */
+     background-image:url("../images/headerBg1.svg");
      background-size:cover ;
      height:90vh;
      animation:changingBG 9s ease-in-out infinite ;
@@ -102,10 +102,20 @@ input[type=checkbox] {
      align-items: center;
      background-position: center;
 }
+/* #header {
+    width: 100%;
+    height:90vh;
+    overflow: hidden;
+    position: relative;
+} */
 #header #bgImg{
     width: 80%;
     height: 300px;
-    justify-content: space-evenly
+    justify-content: space-evenly;
+   
+    /* position: absolute;
+    top: 25%;
+    left: 10% */
 }
 #header #bgImg .top h1,#header #bgImg .top h3{
     color:white;
@@ -137,11 +147,308 @@ input[type=checkbox] {
 }
 
 
+#header .bgImg1{
+    animation : offBgImg 0.4s ease-in infinite;
+    animation-delay: 2s;
+}
+
+
+/* Qatar About Building Styles */
+
+#qatarAbout{
+    padding:30px;
+    /* width:100%; */
+}
+#qatarAbout .container{
+    width:100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin:20px 0;
+}
+#qatarAbout .bottom.container{
+    flex-direction: row-reverse;
+}
+#qatarAbout .container .img-container{
+   position:relative;
+}
+#qatarAbout .container img{
+    height:300px;
+}
+#qatarAbout .container .text{
+    width:60%;
+    /* height:200px; */
+    align-items: start;
+}
+#qatarAbout .container .text h3,#qatarAbout .container .text p{
+    margin:15px;
+}
+#qatarAbout .container .text h3{
+    font-size: 30px;
+
+}
+
+#qatarAbout .container .rectangle{
+   
+    width: 270px;
+    height: 270px;
+    display: block;
+    position: absolute;
+    border-radius: 14px;
+  
+    top: -7%;
+    z-index:-1;
+}
+
+#qatarAbout .top.container .rectangle{
+    background-color: #306F821A;
+    left: -7%;
+}
+#qatarAbout .bottom.container .rectangle{
+    background-color: #FAAE5426;
+    right: -7%;
+}
+
+#qatarAbout .top.container.addAnimation .img-container,#qatarAbout .bottom.container.addAnimation .text{
+    animation:slideLeft 0.5s ease-in-out;
+}
+#qatarAbout .bottom.container.addAnimation .img-container,#qatarAbout .top.container.addAnimation .text{
+    animation:slideRight 0.5s ease-in-out;
+}
+
+/* About Section */
+#about{
+    background-image: url("../images/aboutBg.svg");
+    width:100%;
+    background-size:cover ;
+    height:90vh;
+    background-position: center;
+}
+#about .container{
+    width:70%;
+    color:white;
+}
+#about .container a{
+    background-color:white;
+    color:black;
+    padding:10px;
+    border-radius: 20px;
+}
+#about .container a:hover{
+    background-color:black;
+    color:white;
+    /* padding:20px; */
+    transition: background-color 0.2s linear;
+}
+#about .container p,#about .container h2,#about .container p,#about .container a{
+    margin:20px 0;
+}
+#about.addAnimation .container p{
+    animation : slideDown 0.7s ease-in-out;
+}
+#about.addAnimation .container p.txt-center,#about.addAnimation .container h2,#about.addAnimation .container a{
+
+    animation : slideUp 0.7s ease-in-out;
+}
+
+/* Countries Section */
+
+#countries .top p, #countries .top h3,#countries .buttons{
+    margin:20px 0;
+}
+#countries .buttons .btn{
+    background:transparent;
+    border:none;
+    /* margin:10px; */
+    padding:10px;
+}
+#countries .buttons .btn.active{
+    background-color:#004AAD;
+    border-radius: 20px;
+    color:white;
+    transition:background-color 0.1s linear,color 0.1s linear;
+}
+#countries .container{
+    display:none;
+}
+#countries .container.active{
+    display: flex;
+}
+#countries .container.qatar .top img{
+    height:450px;
+}
+#countries .container.qatar .top,#countries .container.qatar .bottom{
+    margin:10px 0;
+}
+#countries .container .imgContainer{
+
+    margin:10px;
+}
+#countries .container.qatar .bottom img{
+    height:200px;
+   
+}
+#countries .container.dubai {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#countries .container.dubai .top img{
+    height:330px;
+    margin:15px;
+    border-radius: 10px;
+}
+#countries .container.dubai .bottom img{
+    height:200px;
+    margin:15px;
+    border-radius: 10px;
+}
+
+#countries .container.mauritius {
+    flex-wrap: wrap;
+}
+#countries .container.mauritius  img{
+    height:300px;
+    margin:15px;
+    border-radius: 10px;
+}
+#countries .container.saudi{
+    /* flex-direction: row; */
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#countries .container.saudi  img{
+    height:300px;
+    margin:15px;
+    border-radius: 10px;
+}
+#countries .container.saudi .centerContainer img{
+    height:270px;
+    margin:15px;
+    border-radius: 10px;
+}
+
+#countries .container .imgContainer{
+    position:relative;
+    overflow: hidden;
+}
+#countries .container .imgContainer .popup{
+    position: absolute;
+    bottom: 1%;
+    padding: 10px;
+    opacity:0;
+    background-color: #000000b3;
+    color: white;
+    border-radius: 0 0 5px 5px;
+    width: 100%;
+    z-index: -1;
+}
+#countries .container .imgContainer:hover .popup{
+    z-index: 2;
+    opacity:1;
+    transition: z-index 0.1s linear,opacity 0.3s linear;
+}
+
+
+/* Services Styles */
+
+#services{
+    padding:30px 0;
+}
+#services h3{
+    font-size: 30px;
+}
+#services .container{
+    margin:40px 0;
+}
+#services .container .top,#services .container .bottom{
+    width:100%;
+    height: 350px;
+   
+    background-position: center;
+    background-size: cover;
+}
+#services .container .top{
+    background-image: url("../images/servicesBg1.svg");
+}
+#services .container .bottom{
+    background-image: url("../images/servicesBg2.svg");
+    display: flex;
+    justify-content:flex-end ;
+}
+#services .container .top .text,#services .container .bottom .text{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    height: inherit;
+    background-color: #004bad82;
+}
+#services .container .top .text p,#services .container .bottom .text p{
+    color:white;
+    margin: 40px;
+}
+
+
+
+
+
+/* Apartments Section */
+
+#apartments{
+    padding:30px;
+}
+
+#apartments .container .imgs{
+    padding:30px 0;
+    align-items:start;
+   flex-wrap:wrap;
+   overflow:hidden;
+   border-radius:20px;
+}
+
+#apartments .container .top,#apartments .container .bottom,#apartments .container .centerContainer div{
+    overflow:hidden;
+    border-radius:20px;
+}
+
+
+#apartments .container .top,#apartments .container .bottom,#apartments .container .centerContainer img{
+    margin:10px;
+   
+}
+#apartments .container .top img,#apartments .container .bottom img{
+    height:450px;
+    /* margin:10px; */
+}
+#apartments .container .centerContainer img{
+    height:270px;
+    /* margin:10px; */
+}
+#apartments .container  img:hover{
+    transform:scale(1.15);
+    transition:transform 0.2s ease-in-out;
+}
 
 
 
 
 /* CSS Animations */
+
+@keyframes slideLeft{
+    0%{
+        transform:translateX(-100%);
+    }
+    100%{
+        transform:translateX(0);
+    }
+}
+@keyframes slideRight{
+    0%{
+        transform:translateX(100%);
+    }
+    100%{
+        transform:translateX(0);
+    }
+}
+
 
 @keyframes changingBG {
     0%{
@@ -178,6 +485,14 @@ input[type=checkbox] {
 @keyframes slideDown{
     0%{
         transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes slideUp{
+    0%{
+        transform: translateY(100%);
     }
     100%{
         transform: translateY(0);
@@ -236,7 +551,7 @@ input[type=checkbox] {
     input[type=checkbox]:checked ~ .hamburger-menu{
         border:solid black 2px;
         border-radius:4px;
-        background-color:white;
+        background-color:#c4c1c175;
         transition:padding 0.1s linear;
     }
 
@@ -259,4 +574,69 @@ input[type=checkbox] {
     #header #bgImg .bottom h6{
         font-size:20px;
     }
+
+
+
+    /* Qatar About */
+    #qatarAbout .container img{
+        height:150px;
+    }
+
+#qatarAbout .container .text h3{
+    font-size: 20px;
+
+}
+#qatarAbout .container .text {
+    width:100%;
+}
+#qatarAbout .container{
+    flex-direction: column!important;
+}
+#qatarAbout .container .rectangle{
+    width:120px;
+    height:120px;
+}
+
+
+/* Countries */
+#countries .container.qatar{
+    flex-wrap: wrap;
+}
+#countries .container.qatar .top img{
+
+    height:200px;
+}
+#countries .container.qatar .bottom img{
+    height:110px;
+}
+#countries .container.mauritius .top,#countries .container.mauritius .bottom{
+    flex-direction: column;
+}
+#countries .container.mauritius img{
+
+    height:200px!important;
+}
+#countries .container.saudi .top,#countries .container.saudi .centerContainer,#countries .container.saudi .bottom{
+    flex-direction: column;
+}
+
+#countries .container.saudi img{
+    height:200px!important;
+}
+
+#countries .container .imgContainer .popup h3,#countries .container .imgContainer .popup p{
+    font-size:15px;
+    margin:5px 0;
+}
+#countries .container .imgContainer .popup p{
+    font-size:10px;
+    width: 90%;
+
+}
+
+
+/* Apartments */
+#apartments .container {
+    flex-direction:column;
+}
 }
