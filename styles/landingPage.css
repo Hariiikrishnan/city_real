@@ -97,7 +97,7 @@ input[type=checkbox] {
      background-image:url("../images/headerBg1.svg");
      background-size:cover ;
      height:90vh;
-     animation:changingBG 9s ease-in-out infinite ;
+     /* animation:changingBG 9s ease-in-out infinite ; */
      display: flex;
      align-items: center;
      background-position: center;
@@ -146,11 +146,6 @@ input[type=checkbox] {
    animation-delay:1.1s;
 }
 
-
-#header .bgImg1{
-    animation : offBgImg 0.4s ease-in infinite;
-    animation-delay: 2s;
-}
 
 
 /* Qatar About Building Styles */
@@ -333,6 +328,7 @@ input[type=checkbox] {
 #countries .container .imgContainer .popup{
     position: absolute;
     bottom: 1%;
+    left:-10%;
     padding: 10px;
     opacity:0;
     background-color: #000000b3;
@@ -344,7 +340,8 @@ input[type=checkbox] {
 #countries .container .imgContainer:hover .popup{
     z-index: 2;
     opacity:1;
-    transition: z-index 0.1s linear,opacity 0.3s linear;
+    left:0%;
+    transition: z-index 0.1s linear,opacity 0.3s linear,left 0.3s linear;
 }
 
 
@@ -358,11 +355,12 @@ input[type=checkbox] {
 }
 #services .container{
     margin:40px 0;
+    overflow: hidden;
 }
 #services .container .top,#services .container .bottom{
     width:100%;
     height: 350px;
-   
+    overflow: hidden;
     background-position: center;
     background-size: cover;
 }
@@ -377,6 +375,7 @@ input[type=checkbox] {
 #services .container .top .text,#services .container .bottom .text{
     width: 30%;
     display: flex;
+    flex-direction:column;
     align-items: center;
     height: inherit;
     background-color: #004bad82;
@@ -385,9 +384,21 @@ input[type=checkbox] {
     color:white;
     margin: 40px;
 }
-
-
-
+#services .container .top .text .icons {
+    padding: 0 5px;
+}
+#services .container .top .text .icons p{
+    margin:0 5px;
+    font-size: 12px;
+}
+#services .container .top:hover,#services .container .bottom:hover{
+    transform: scale(1.07);
+    transition: transform 0.2s ease-in-out;
+   
+}
+#services .container .top:hover .text,#services .container .bottom:hover .text{
+    /* transform: scale(); */
+}
 
 
 /* Apartments Section */
@@ -526,6 +537,12 @@ input[type=checkbox] {
 
 }
 
+
+
+
+
+
+
 /* Mobile Size Media Queries */
 
 @media only screen and (max-width:768px){
@@ -632,6 +649,12 @@ input[type=checkbox] {
     font-size:10px;
     width: 90%;
 
+}
+
+
+/* Services Section */
+#services .container .top .text,#services .container .bottom .text{
+    width: 70%;
 }
 
 
