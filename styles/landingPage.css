@@ -10,90 +10,6 @@ html{
 }
 
 
-/* Navbar Styles */
-a{
-    text-decoration: none;
-   
-}
-.nav-links li a:link{
-    animation:slideDown 0.3s ease-in;
-}
- li {
-    list-style: none;
-}
-
-.nav-links .menu button {
-    font-family: 'Poppins', Arial, sans-serif;
-    background-color:white;
-}
-
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    white-space: nowrap;
-    margin: 0 30px;
-    padding:20px 0;
-}
-
-.nav-links a {
-    color: #000;
-    font-family: 'Poppins', Arial, sans-serif;
-   
-}
-
-.nav-links a:hover {
-    color: #888686;
-}
-
-.logo img{
-   height:40px;
-    animation:slideDown 0.3s ease-in;
-}
-
-.menu {
-    display: flex;
-    gap: 1em;
-    font-size: 15px;
-    align-items: center;
-    background-color:white;
-    
-    animation:slideDown 0.3s ease-in;
-}
-
-.menu a {
-    font-weight: 500;
-    margin-left: 30px;
-}
-
-.menu button {
-    font-weight: 500;
-    border: 1px solid rgb(106, 177, 224);
-    padding: 10px 13px;
-    border-radius: 60px;
-    margin-left: 30px;
-    font-family: 'Poppins', Arial, sans-serif;
-   
-}
-
-.menu button:hover {
-    color: rgb(106, 177, 224);
-    border: 1px solid #000;
-    transition: 1s ace;
-}
-
-/* Hamburger menu */
-input[type=checkbox] {
-    display: none;
-
-}
-
-.hamburger-menu {
-    display: none;
-    font-size: 20px;
-    user-select: none;
-}
-
 
 
 
@@ -391,7 +307,7 @@ input[type=checkbox] {
     margin: 40px;
 }
 #services .container .top .text .icons {
-    padding: 0 5px;
+    margin: 0 40px;
 }
 #services .container .top .text .icons p{
     margin:0 5px;
@@ -553,42 +469,7 @@ input[type=checkbox] {
 
 @media only screen and (max-width:768px){
 
-    /* Navbar */
-    .menu {
-        display: none;
-        position: absolute;
-        right: 0;
-        text-align: center;
-        padding: 10px 0;
-        left: 0;
-    }
-
-    .menu li, 
-    .menu button{
-        margin-top: 10px;
-    }
-
-    input[type=checkbox]:checked ~ .menu {
-        display: block;
-    }
-    input[type=checkbox]:checked ~ .hamburger-menu{
-        border:solid black 2px;
-        border-radius:4px;
-        background-color:#c4c1c175;
-        transition:padding 0.1s linear;
-    }
-
-     .menu{
-        /* animation:none; */
-        animation:slideLightDown 0.3s ease-in;
-    }
-    .hamburger-menu {
-        display: block;
-        margin-bottom: 3px;
-        padding:3px 8px;
-    animation:slideDown 0.3s ease-in;
-    }
-
+    
 
     /* Header text */
     #header #bgImg .top h1,#header #bgImg .top h3{
