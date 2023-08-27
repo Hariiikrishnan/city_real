@@ -68,13 +68,18 @@ p{
     background-color:white;
 }
 
+
+#navBar{
+    width:100%;
+}
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     white-space: nowrap;
-    margin: 0 30px;
+    /* margin: 0 30px; */
     padding:20px 0;
+    width:70%;
 }
 
 .nav-links a {
@@ -153,12 +158,16 @@ input[type=checkbox] {
 #footer .container{
     align-items: start;
     justify-content: start;
-    padding: 0 80px;
+    /* padding: 0 80px; */
+    width:70%;
 }
 #footer .about,#footer .contact{
-    padding:20px 30px;
+    /* padding:20px 30px; */
     width:30%;
     align-items: start;    
+}
+#footer .contact{
+     padding:0 30px;
 }
 /* #footer .emptyBg{
     background-color: grey;
@@ -202,7 +211,7 @@ input[type=checkbox] {
     justify-content: center;
 }
 #footer .hrLine hr{
-    width:85%;
+    width:70%;
     border:solid rgba(156, 156, 156, 0.894) 1px;
     border-radius: 10px;
 }
@@ -210,7 +219,9 @@ input[type=checkbox] {
     height:150px;
     margin:0 30px;
 }
-
+#footer .footer-body{
+    width:100%
+}
 
 
 
@@ -230,6 +241,9 @@ input[type=checkbox] {
 @media only screen and (max-width:768px){
 
     /* Navbar */
+    .navbar {
+        width:80%;
+    }
     .menu {
         display: none;
         position: absolute;
@@ -282,10 +296,15 @@ input[type=checkbox] {
         align-items: baseline;
         /* justify-content: center; */
         padding: 10px;
+        width:80%;
     }
     #footer .about,#footer .contact{
         padding:0 5px;
         width:40%;
         /* align-items: start;     */
+    }
+
+    #footer .hrLine hr{
+        width:80%
     }
 }

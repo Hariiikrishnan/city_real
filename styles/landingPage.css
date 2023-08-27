@@ -40,8 +40,6 @@ html{
 }
 #header #bgImg .top h1,#header #bgImg .top h3{
     color:white;
-    font-weight: 900;
-    font-size: 45px;
     font-family: 'Poppins', Arial, sans-serif;
    
     /* font-family: */
@@ -49,10 +47,13 @@ html{
 #header #bgImg .top h1{
     text-align: center;
     /* opacity: 0; */
+    font-size: 45px;
+    font-weight:700;
     animation : slideRightIn 0.5s ease-in;
     animation-delay: 1.1s;
 }
 #header #bgImg .top h3{
+    font-size: 30px;
     animation : slideLeftIn 0.5s ease-in;
     animation-delay: 1.1s;
 
@@ -292,7 +293,7 @@ html{
     overflow:hidden;
 }
 #services .container .top img,#services .container .bottom img{
-    width:100%;
+    /* width:100%; */
 }
 #services .top .bgContainer.img1{
 
@@ -307,12 +308,12 @@ html{
     width:100%;
     background-position: center;
     background-size: cover;
-    height:350px;
+    height:500px;
 }
 #services .container .top .text{
     position: absolute;
     width: 30%;
-    height: 350px;
+    height: 500px;
     background-color: #004bad82;
     color: white;
     left: 0%;
@@ -322,7 +323,7 @@ html{
 #services .container .bottom .text{
     position: absolute;
     width: 30%;
-    height: 350px;
+    height: 500px;
     background-color: #004bad82;
     color: white;
     right: 0%;
