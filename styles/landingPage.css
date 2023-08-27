@@ -498,9 +498,16 @@ html{
     
 
     /* Header text */
-    #header #bgImg .top h1,#header #bgImg .top h3{
+    #header #bgImg .top h1{
         font-size:30px;
     }
+    #header #bgImg .top h3{
+        font-size: 22px;
+    }
+    #quality .head {
+    width: 70%;
+    margin: 30px 0;
+}
     #header #bgImg .bottom h6{
         font-size:20px;
     }
