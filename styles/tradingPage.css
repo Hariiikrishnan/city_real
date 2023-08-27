@@ -427,7 +427,7 @@ html{
 
     /* Header */
     #header .container{
-        width: 90%;
+        width: 80%;
         
     }
     #header h1{       
@@ -440,13 +440,13 @@ html{
 /* About */
 .about-container {
     flex-wrap:wrap;
-    width:90%;
+    width:80%;
 }
 
 
     /* Features */
     #features .container {
-        width: 90%;
+        width: 80%;
     }
     #features .top h2{
         font-size: 20px;
@@ -473,14 +473,14 @@ html{
         padding:10px 0px;
     }
     #quality .container h1{
-        width:90%;
+        width:80%;
         margin:10px 25px;
     }
     #quality .container p{
         margin:0 25px;
     }
     #quality .container .top.child .text p{
-        width:90%;
+        width:80%;
         margin:10px 0;
     }
 
@@ -494,17 +494,20 @@ html{
         width: 80%;
     }
     .services{
-        padding:50px 10px;
+        padding:50px 0px;
     }
     .services .container{
         flex-wrap:wrap ;
     }
     .services .container {
-        width: 90%;
+        width: 100%;
         justify-content: center;
     }
 
-
+    #quality .head {
+        width: 80%;
+        margin: 30px 0;
+    }
     
 }
 
