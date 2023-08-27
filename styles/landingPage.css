@@ -30,7 +30,7 @@ html{
     position: relative;
 } */
 #header #bgImg{
-    width: 80%;
+    width: 70%;
     height: 300px;
     justify-content: space-evenly;
    
@@ -40,8 +40,8 @@ html{
 }
 #header #bgImg .top h1,#header #bgImg .top h3{
     color:white;
-    font-weight: 700;
-    font-size: 40px;
+    font-weight: 900;
+    font-size: 45px;
     font-family: 'Poppins', Arial, sans-serif;
    
     /* font-family: */
@@ -76,7 +76,7 @@ html{
     /* width:100%; */
 }
 #qatarAbout .container{
-    width:100%;
+    width:70%;
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin:20px 0;
@@ -274,53 +274,79 @@ html{
 #services h3{
     font-size: 30px;
 }
+/* #services .container img{
+    width:100%;
+} */
 #services .container{
-    margin:40px 0;
-    overflow: hidden;
+    /* position:relative; */
+    width:100%;
+}
+#services h3{
+    margin:20px 0;
 }
 #services .container .top,#services .container .bottom{
+    position:relative;
+    /* width:100%; */
+}
+#services .container .top,#services .container .bottom{
+    overflow:hidden;
+}
+#services .container .top img,#services .container .bottom img{
     width:100%;
-    height: 350px;
-    overflow: hidden;
+}
+#services .top .bgContainer.img1{
+
+    background-image:url("../images/servicesBg1.svg");
+}
+#services .bottom .bgContainer.img2{
+
+    background-image:url("../images/servicesBg2.svg");
+}
+#services .bgContainer{
+    /* background-image:url("../images/servicesBg1.svg"); */
+    width:100%;
     background-position: center;
     background-size: cover;
+    height:350px;
 }
-#services .container .top{
-    background-image: url("../images/servicesBg1.svg");
-}
-#services .container .bottom{
-    background-image: url("../images/servicesBg2.svg");
-    display: flex;
-    justify-content:flex-end ;
-}
-#services .container .top .text,#services .container .bottom .text{
+#services .container .top .text{
+    position: absolute;
     width: 30%;
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    height: inherit;
+    height: 350px;
     background-color: #004bad82;
+    color: white;
+    left: 0%;
+    top: 0%;
+    padding: 20px;
 }
-#services .container .top .text p,#services .container .bottom .text p{
-    color:white;
-    margin: 40px;
+#services .container .bottom .text{
+    position: absolute;
+    width: 30%;
+    height: 350px;
+    background-color: #004bad82;
+    color: white;
+    right: 0%;
+    top: 0%;
+    padding: 20px;
 }
-#services .container .top .text .icons {
-    margin: 0 40px;
+#services .container .text p{
+    margin:20px 0;
 }
-#services .container .top .text .icons p{
-    margin:0 5px;
-    font-size: 12px;
+#services .icons{
+    margin:10px 0;
 }
-#services .container .top:hover,#services .container .bottom:hover{
+#services .icons p{
+    margin: 0 5px!important;
+}
+
+#services .container .bgContainer:hover {
     transform: scale(1.07);
     transition: transform 0.2s ease-in-out;
-   
 }
-#services .container .top:hover .text,#services .container .bottom:hover .text{
-    /* transform: scale(); */
-}
+
+/* #services .container .top:hover .text,#services .container .bottom:hover .text{
+    transform: scale();
+} */
 
 
 /* Apartments Section */
@@ -544,9 +570,11 @@ html{
     width: 70%;
 }
 #services .container .top .text p,#services .container .bottom .text p{
-    margin: 20px;
+    margin: 10px;
 }
-
+#services .icons{
+    margin:10px 0;
+}
 /* Apartments */
 #apartments .container {
     flex-direction:column;

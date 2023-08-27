@@ -237,6 +237,7 @@ input[type=checkbox] {
         text-align: center;
         padding: 10px 0;
         left: 0;
+        z-index: 9999;
     }
 
     .menu li, 
