@@ -311,6 +311,7 @@ html{
     height:500px;
 }
 #services .container .top .text{
+    align-items: start;
     position: absolute;
     width: 30%;
     height: 500px;
@@ -318,7 +319,8 @@ html{
     color: white;
     left: 0%;
     top: 0%;
-    padding: 20px;
+    /* padding: 20px; */
+    padding: 0 15%;
 }
 #services .container .bottom .text{
     position: absolute;
@@ -328,10 +330,12 @@ html{
     color: white;
     right: 0%;
     top: 0%;
-    padding: 20px;
+    /* padding: 20px; */
+    padding: 0 15%;
 }
 #services .container .text p{
     margin:20px 0;
+    font-size: 30px;
 }
 #services .icons{
     margin:10px 0;
@@ -492,6 +496,18 @@ html{
 
 
 
+/* Tablet Sized Media Query */
+@media (min-width:768px) and (max-width:1024px){
+    #services .container .top .text p,#services .container .bottom .text p{
+        margin: 10px;
+        font-size: 22px;
+    }
+}
+
+
+
+
+
 /* Mobile Size Media Queries */
 
 @media only screen and (max-width:768px){
@@ -513,13 +529,13 @@ html{
         font-size:20px;
     }
     #header #bgImg{
-        width:90%;
+        width:80%;
     }
 
 
     /* Qatar About */
     #qatarAbout .container{
-        width:90%;
+        width:80%;
     }
     #qatarAbout .container img{
         height:150px;
@@ -584,10 +600,16 @@ html{
 }
 #services .container .top .text p,#services .container .bottom .text p{
     margin: 10px;
+    font-size: 18px;
 }
 #services .icons{
     margin:10px;
 }
+#services .container .top .text,#services .container .bottom .text{
+    padding:0 10%;
+}
+
+
 /* Apartments */
 #apartments .container {
     flex-direction:column;
@@ -595,6 +617,6 @@ html{
 
 /* About */
 #about .container{
-    width:90%;
+    width:80%;
 }
 }
